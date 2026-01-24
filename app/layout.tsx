@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Full-Stack Developer | Portfolio',
-  description: 'Junior full-stack developer specializing in PHP, MySQL, JavaScript, and React. Internship-focused with a passion for clean code and user-focused solutions.',
+  title: 'Krishnik Barman | Full-Stack Developer Portfolio',
+  description: 'Junior full-stack developer specializing in PHP, MySQL, JavaScript & React. View projects, skills and contact details.',
   generator: 'v0.app',
   viewport: {
     width: 'device-width',
