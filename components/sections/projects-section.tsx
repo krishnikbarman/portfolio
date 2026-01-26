@@ -23,15 +23,17 @@ export default function ProjectsSection() {
     {
       title: 'WorkVault – Employee Management System',
       description:
-        'A web application for HR teams to manage employee records efficiently. Implemented secure session-based authentication, CRUD operations for employee data, and department filtering. Focused on preventing SQL injection and securing user inputs.',
-      technologies: ['JavaScript', 'PHP', 'MySQL', 'HTML/CSS'],
+        'A modern employee management web application built with vanilla JavaScript and Supabase. Enables HR teams to efficiently manage employee records with real-time authentication, CRUD operations, and analytics. Features a responsive admin dashboard with advanced filtering and status management.',
+      technologies: ['JavaScript', 'Supabase', 'PostgreSQL', 'HTML', 'CSS', 'GitHub Pages'],
       highlights: [
-        'Session-based authentication with password hashing',
-        'Complete CRUD functionality for employee records',
-        'SQL injection prevention using prepared statements',
-        'Department-based filtering and search',
-        'Role-based access control',
-        'Clean, responsive interface'
+        'Supabase authentication with secure user sessions',
+        'Employee CRUD operations with real-time updates',
+        'Status management (Active / On Leave / Inactive)',
+        'Dashboard analytics with real-time counts',
+        'Search and department-based filtering',
+        'Row Level Security (RLS) for data protection',
+        'Responsive admin dashboard UI',
+        'Live deployment via GitHub Pages'
       ],
       githubLink: 'https://github.com/krishnikbarman/workvault-employee-management',
     },
