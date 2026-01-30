@@ -24,17 +24,16 @@ export default function ContactSection() {
   ]
 
   return (
-    <section id="contact" className="py-20 px-4 bg-background">
+    <section id="contact" className="py-24 px-4 bg-background">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
           Get In Touch
         </h2>
-        <p className="text-lg text-muted-foreground text-center mb-12">
-          Open to internship opportunities and eager to contribute to your team. 
-          Let's discuss how I can help build great web applications.
+        <p className="text-lg text-muted-foreground text-center mb-16">
+          Open to internship opportunities and eager to contribute to real-world projects.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-8">
           {contactLinks.map((contact) => {
             const Icon = contact.icon
             return (
@@ -45,7 +44,7 @@ export default function ContactSection() {
                 rel="noopener noreferrer"
                 className="group"
               >
-                <div className="p-6 bg-card border border-secondary rounded-lg hover:shadow-lg transition-shadow text-center space-y-3">
+                <div className="p-8 bg-card border border-secondary rounded-lg hover:shadow-lg transition-shadow text-center space-y-4">
                   <Icon className="w-8 h-8 text-primary mx-auto group-hover:scale-110 transition-transform" />
                   <div>
                     <p className="text-sm text-muted-foreground">{contact.label}</p>
@@ -59,8 +58,8 @@ export default function ContactSection() {
           })}
         </div>
 
-        <div className="mt-16 pt-12 border-t border-secondary text-center">
-          <p className="text-muted-foreground mb-4">Available for summer 2026 internships</p>
+        <div className="mt-20 pt-16 border-t border-secondary text-center">
+          <p className="text-muted-foreground mb-6">Available for internship opportunities</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Button
               size="lg"

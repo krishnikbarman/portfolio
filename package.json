@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "eslint .",
     "deploy": "npm run build && touch > out/.nojekyll && gh-pages -d out"
-
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -67,6 +66,7 @@
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "baseline-browser-mapping": "^2.9.19",
     "gh-pages": "^6.1.1",
     "postcss": "^8.5",
     "tailwindcss": "^4.1.9",

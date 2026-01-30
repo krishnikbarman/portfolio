@@ -1,28 +1,20 @@
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 px-4 bg-card">
+    <section id="about" className="py-24 px-4 bg-card">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">About Me</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-14">About Me</h2>
         
-        <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+        <div className="space-y-7 text-lg text-muted-foreground leading-relaxed">
           <p>
-            I'm a junior full-stack developer with practical experience building web applications 
-            using PHP, MySQL, and JavaScript. I've worked on employee management systems, student 
-            training platforms, and productivity tools—focusing on secure authentication, database 
-            design, and reliable CRUD operations.
+            I'm a final-year Computer Science student and Full-Stack Developer Intern with hands-on experience building real-world, production-ready web applications.
           </p>
 
           <p>
-            My projects include implementing user login systems with session management, designing 
-            relational databases with proper normalization, and building responsive interfaces. 
-            I write clean, maintainable code and prioritize security practices like input validation 
-            and SQL injection prevention.
+            I've worked on employee management systems, training platforms, and productivity tools with a strong focus on authentication, database design, and CRUD-driven workflows.
           </p>
 
           <p>
-            I'm seeking internship opportunities to contribute to real-world applications and learn 
-            from experienced teams. I'm particularly interested in backend development, API design, 
-            and full-stack features where I can apply my skills and grow as a developer.
+            I enjoy writing clean, maintainable code and building secure, user-focused interfaces. Currently open to internship opportunities where I can contribute to real-world projects and grow as a full-stack developer.
           </p>
         </div>
       </div>

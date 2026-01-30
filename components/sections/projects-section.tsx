@@ -6,67 +6,72 @@ import { Github } from 'lucide-react'
 export default function ProjectsSection() {
   const projects = [
     {
-      title: 'Student Training Management System',
-      description:
-        'Designed to streamline course enrollment and student progress tracking for training programs. Built a complete PHP/MySQL backend with user authentication, relational database schema, and admin controls for managing courses, students, and performance data.',
-      technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML/CSS'],
-      highlights: [
-        'Multi-role authentication (students, instructors, admin)',
-        'Course enrollment with progress tracking',
-        'Database normalization and foreign key relationships',
-        'Server-side form validation',
-        'Admin dashboard for user and course management',
-        'Responsive UI with mobile support'
-      ],
-      githubLink: 'https://github.com/krishnikbarman/student-training-management-system',
-    },
-    {
       title: 'WorkVault – Employee Management System',
       description:
-        'A modern employee management web application built with vanilla JavaScript and Supabase. Enables HR teams to efficiently manage employee records with real-time authentication, CRUD operations, and analytics. Features a responsive admin dashboard with advanced filtering and status management.',
-      technologies: ['JavaScript', 'Supabase', 'PostgreSQL', 'HTML', 'CSS', 'GitHub Pages'],
+        'Full-stack employee management system with authentication and role-based access control.',
+      technologies: ['JavaScript', 'Supabase', 'PostgreSQL', 'HTML', 'CSS'],
       highlights: [
-        'Supabase authentication with secure user sessions',
-        'Employee CRUD operations with real-time updates',
-        'Status management (Active / On Leave / Inactive)',
-        'Dashboard analytics with real-time counts',
-        'Search and department-based filtering',
-        'Row Level Security (RLS) for data protection',
-        'Responsive admin dashboard UI',
-        'Live deployment via GitHub Pages'
+        'Employee CRUD operations and status management',
+        'Secure authentication using Supabase',
+        'Admin dashboards with filtering and analytics',
+        'Responsive UI inspired by ERP systems'
       ],
       githubLink: 'https://github.com/krishnikbarman/workvault-employee-management',
     },
     {
-      title: 'Productivity Task Manager',
+      title: 'Student Training Management System',
       description:
-        'A frontend web app to help users organize daily tasks and improve productivity. Built with React using component-based architecture, state management with hooks, and localStorage for data persistence. Focused on creating an intuitive, fast user experience.',
-      technologies: ['React', 'JavaScript', 'CSS3'],
+        'PHP–MySQL based system for managing student training programs.',
+      technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
       highlights: [
-        'Component-based architecture with React hooks',
-        'Dynamic state management for real-time updates',
-        'LocalStorage integration for data persistence',
-        'Task filtering and completion tracking',
-        'Clean, minimal UI design',
-        'Fully responsive layout'
+        'Admin authentication and access control',
+        'Student, project, and file upload management',
+        'Session-based security',
+        'SQL injection prevention'
+      ],
+      githubLink: 'https://github.com/krishnikbarman/student-training-management-system',
+    },
+    {
+      title: 'Personal Productivity App',
+      description:
+        'React-based app for managing tasks, notes, and daily goals.',
+      technologies: ['React', 'JavaScript', 'CSS'],
+      highlights: [
+        'Task and note management',
+        'Pagination and sorting',
+        'Dashboard overview',
+        'Local storage persistence'
       ],
       githubLink: 'https://github.com/krishnikbarman/personal-productivity-app',
+    },
+    {
+      title: 'PureMuga – Business Showcase Website',
+      description:
+        'Production-ready business website for a local Assamese silk store.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      highlights: [
+        'Responsive, mobile-first design',
+        'Clean layout focused on product showcase',
+        'Performance-optimized pages',
+        'Real-world business usability'
+      ],
+      githubLink: '#',
     },
   ]
 
   return (
-    <section id="projects" className="py-20 px-4 bg-card">
+    <section id="projects" className="py-24 px-4 bg-card">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-12">Projects</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-14">Projects</h2>
 
-        <div className="grid gap-8">
+        <div className="grid gap-10">
           {projects.map((project, index) => (
             <Card
               key={index}
               className="border-secondary hover:shadow-lg transition-shadow bg-background"
             >
-              <CardHeader>
-                <div className="space-y-3">
+              <CardHeader className="pb-4">
+                <div className="space-y-4">
                   <CardTitle className="text-2xl text-foreground">
                     {project.title}
                   </CardTitle>
@@ -77,10 +82,10 @@ export default function ProjectsSection() {
               </CardHeader>
 
               <CardContent>
-                <div className="space-y-5">
+                <div className="space-y-6">
                   <div>
                     <p className="text-sm font-semibold text-foreground mb-2">Tech Stack</p>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2.5">
                       {project.technologies.map((tech) => (
                         <Badge
                           key={tech}
@@ -95,7 +100,7 @@ export default function ProjectsSection() {
 
                   <div>
                     <p className="text-sm font-semibold text-foreground mb-3">Key Features</p>
-                    <ul className="grid md:grid-cols-2 gap-x-4 gap-y-2 text-sm text-muted-foreground">
+                    <ul className="grid md:grid-cols-2 gap-x-4 gap-y-2.5 text-sm text-muted-foreground">
                       {project.highlights.map((highlight) => (
                         <li key={highlight} className="flex items-start">
                           <span className="text-primary mr-2">✓</span>
@@ -105,7 +110,7 @@ export default function ProjectsSection() {
                     </ul>
                   </div>
 
-                  <div className="pt-2">
+                  <div className="pt-3">
                     <Button
                       variant="outline"
                       size="sm"
