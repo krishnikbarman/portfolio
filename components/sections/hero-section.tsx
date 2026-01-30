@@ -47,8 +47,8 @@ export default function HeroSection() {
             className="border-primary text-primary hover:bg-primary/10"
           >
             <a
-              href="/Krishnik_Barman_Full_Stack_Developer_Intern.pdf"
-              download="Krishnik_Barman_Full_Stack_Developer_Intern.pdf"
+              href="/Krishnik_Barman_Full_Stack_Developer_Intern_Resume.pdf"
+              download="Krishnik_Barman_Full_Stack_Developer_Intern_Resume.pdf"
               className="flex items-center gap-2"
             >
               <Download className="w-5 h-5" />
