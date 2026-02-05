@@ -45,17 +45,17 @@ export default function ProjectsSection() {
       githubLink: 'https://github.com/krishnikbarman/personal-productivity-app',
     },
     {
-      title: 'PureMuga – Business Showcase Website',
+      title: 'Pure Assam Silk – Brand Showcase Website',
       description:
-        'Production-ready business website for a local Assamese silk store.',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
+        'Designed and developed a website for an Assamese silk startup using React and Tailwind CSS.',
+      technologies: ['React', 'Tailwind CSS', 'JavaScript'],
       highlights: [
-        'Responsive, mobile-first design',
-        'Clean layout focused on product showcase',
-        'Performance-optimized pages',
-        'Real-world business usability'
+        'Structured product collections',
+        'Reusable UI components',
+        'Real-world contact integrations',
+        'Modern, responsive design'
       ],
-      githubLink: '#',
+      githubLink: 'https://github.com/krishnikbarman/pure-assam-silk-website',
     },
   ]
 
