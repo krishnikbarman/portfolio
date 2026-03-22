@@ -1,7 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes splashFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes splashProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-slideInUp {
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-splashFadeIn {
+  animation: splashFadeIn 0.6s ease-out forwards;
+}
+
+.animate-splashProgress {
+  animation: splashProgress 1.8s ease-out forwards;
+}
+
+/* Staggered animation delays */
+[data-animation-delay="0"] {
+  animation-delay: 0s;
+}
+
+[data-animation-delay="1"] {
+  animation-delay: 0.1s;
+}
+
+[data-animation-delay="2"] {
+  animation-delay: 0.2s;
+}
+
+[data-animation-delay="3"] {
+  animation-delay: 0.3s;
+}
+
+[data-animation-delay="4"] {
+  animation-delay: 0.4s;
+}
+
+[data-animation-delay="5"] {
+  animation-delay: 0.5s;
+}
+
+[data-animation-delay="6"] {
+  animation-delay: 0.6s;
+}
+
+[data-animation-delay="7"] {
+  animation-delay: 0.7s;
+}
+
+[data-animation-delay="8"] {
+  animation-delay: 0.8s;
+}
+
+[data-animation-delay="9"] {
+  animation-delay: 0.9s;
+}
+
+[data-animation-delay="10"] {
+  animation-delay: 1s;
+}
+
+/* Light mode styles */
+html {
+  color-scheme: light dark;
+}
+
+html:not(.dark) {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.6%;
+}
+
+html:not(.dark) body {
+  @apply bg-white text-slate-900;
+}
+
+html.dark {
+  --background: 0 0% 3.6%;
+  --foreground: 0 0% 98%;
+}
+
+html.dark body {
+  @apply bg-slate-950 text-white;
+}
 
 :root {
   --background: oklch(0.98 0.001 284.545);
