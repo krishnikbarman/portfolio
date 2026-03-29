@@ -108,7 +108,7 @@ export default function HeroSection() {
             Contact Me
           </button>
           <a
-            href="/Krishnik-Barman-Resume.pdf"
+            href="/Krishnik_Barman_Resume.pdf"
             download
             className="px-8 py-3 border-2 border-blue-500 dark:border-blue-400 text-blue-600 dark:text-blue-400 rounded-lg font-semibold hover:bg-blue-500/10 dark:hover:bg-blue-400/10 transition-all duration-300 flex items-center justify-center gap-2"
           >
